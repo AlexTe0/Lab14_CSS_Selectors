@@ -18,10 +18,10 @@ public class SendToCustomerCareTest {
     @Test
     public void sendToCustomerCare(){
         driver.findElement(By.cssSelector("#footerPanel ul:first-of-type li:nth-of-type(8) > a")).click();
-        driver.findElement(By.id("name")).sendKeys("Ciuflea Spataru");
-        driver.findElement(By.id("email")).sendKeys("sefulabani@bombardiermail.com");
-        driver.findElement(By.id("phone")).sendKeys("Samsung S24 Ultra");
-        driver.findElement(By.id("message")).sendKeys("I am escape from polis, giv me free money");
+        driver.findElement(By.cssSelector("#name")).sendKeys("Ciuflea Spataru");
+        driver.findElement(By.cssSelector("#email")).sendKeys("sefulabani@bombardiermail.com");
+        driver.findElement(By.cssSelector("#phone")).sendKeys("Samsung S24 Ultra");
+        driver.findElement(By.cssSelector("#message")).sendKeys("I am escape from polis, giv me free money");
         driver.findElement(By.cssSelector("#contactForm > table > tbody > tr:nth-child(5) > td:nth-child(2) > input")).click();
 
         WebElement welcomeTextElement = driver.findElement(By.cssSelector("#rightPanel p:nth-of-type(2)"));
